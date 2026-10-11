@@ -327,15 +327,22 @@ html.js-motion .hero-art .art-image { animation: image-drift 14s 1.2s ease-in-ou
     transition: none;
   }
 }
-.git-mark {
+.skill-mark.git-mark {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
-}
-
-.git-mark img {
   width: 48px;
   height: 48px;
+  flex-shrink: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.skill-mark.git-mark img {
+  display: block;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
